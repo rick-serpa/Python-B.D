@@ -1,56 +1,28 @@
-from classe import veiculo
+from classe import Veiculo
+from classeConta import Conta, Corrente, Poupanca, Salario
 
-# instaciando um objeto. Criando um objeto apartir da classe veículo
-c1 = veiculo('BMW','320i',2021,'Prata',0)
-c2 = veiculo('Ford','Ranger',2022,'Preto')
+c1 = Corrente(12345)
+c2 = Poupanca(24680)
+c3 = Salario('11223')
 
-#print(c1.modelo)
-#print(c2.modelo)
+print(c1.verSaldo())
+print(c2.verSaldo())
+print(c3.verSaldo())
 
+print(c1.depositar(500))
+print(c2.depositar(600))
+print(c3.depositar(400))
 
-print(c1.getModelo())
-print(c1.getMarcha())
-c1.setMarcha(3)
-print(c1.getMarcha())
+print(c1.verSaldo())
+print(c2.verSaldo())
+print(c3.verSaldo())
 
+print(c1.sacar(200))
+print(c2.sacar(200))
+print(c3.sacar(200))
 
+print(c1.verSaldo())
+print(c2.verSaldo())
+print(c3.verSaldo())
 
-
-
-
-
-#c1.marca = 'BMW'
-#c1.modelo = '320i'
-#c1.ligar()
-#c1.ligar()
-#c1.desligar()
-#c1.ligar()
-#c1.desligar()
-
-#print(c1.marcha)
-#c1.subirMarcha()
-#c1.subirMarcha()
-#c1.descerMarcha()
-#c1.descerMarcha()
-#c1.descerMarcha()
-
-#c1.ligar()
-#c1.subirMarcha()
-#c1.subirMarcha()
-#c1.subirMarcha()
-#print (c1.obemMarcha())
-
-#c1.acelerar()
-#c1.acelerar()
-#c1.acelerar()
-
-#c2 = veiculo()
-#c2.marca = 'Ford'
-#c2.modelo = 'Ranger'
-#c2.ligar()
-#c2.desligar()
-
-#print(c1.marca)
-#print(c1.modelo)
-#print(c2.marca)
-#print(c2.modelo)
+# Implementar na conta Poupança um limite de saque R$ 500,00
