@@ -11,7 +11,7 @@ class Conexao():
         if self.conn.is_connected():
             print('conexão efetuada com sucesso') 
         else:
-            print('Fakha na conexão ao banco/servidor')
+            print('Falha na conexão ao banco/servidor')
 
     def retorna_dados(self, tabela, clausula = ''):
         if self.conn.is_connected():
